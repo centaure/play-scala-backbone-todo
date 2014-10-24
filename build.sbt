@@ -22,3 +22,5 @@ includeFilter in (Assets, LessKeys.less) := "main.less"
 excludeFilter in (Assets, LessKeys.less) := "_*.less"
 
 pipelineStages := Seq(rjs, digest, gzip)
+
+RjsKeys.mainConfig := "build"
